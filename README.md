@@ -17,7 +17,7 @@ journey
 		Friend barely gets passing marks: 2: Friend
 ```
 
-```
+``` mermaid
 journey
 	title dRecords is a practitioner web-application to manage patients their medical records and appointments
 	section Practitioner is registered
