@@ -20,15 +20,15 @@ journey
 ``` mermaid
 journey
 	title dRecords is a practitioner web-application to manage patients their medical records and appointments
-	section Practitioner is registered
-		Practitioner logs-in and views my patients list: 1: Practitioner
-		Practitioner chooses a particular patient from the list: 2: Practitioner
-		Practitioner charts, reads medical details and diagnosis on patient: 3: Practitioner, Patient
-		Practitioner books a calendar appointment with a patient, email is sent: 5: Practitioner, Patient
-	section Patients email
-		Patient receives email: 2: Patient
-		Patient confirms or cancels email by calling clinic: 1: Practitioner, Patient
+	section Practitioner using drecords web-app
+		logs-in and views my patients list: 1: Practitioner
+		chooses a particular patient from the list: 2: Practitioner
+		charts, reads medical details and diagnosis on patient: 3: Practitioner, Patient
+		books a calendar appointment with a patient, email is sent: 5: Practitioner, Patient
+	section Patient check their email
+		receives email: 2: Patient
+		informed of appointment or cancels by calling: 1: Practitioner, Patient
 	section Patients visits appointment
-		Practitioner is able to chart and update notes on patient: 5: Practitioner
-		Practitioner updates drecords, logs out nulling session id: 2: Patient
+		is able to chart and update notes on patient: 5: Practitioner
+		updates drecords, logs out nulling session id: 2: Patient
 ```
